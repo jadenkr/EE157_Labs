@@ -22,9 +22,13 @@ The purpose of the lab was to create a goofy motor utilizing 3 materials. A magn
 # Video Time!
 
 Recording in 60fps
+
+
 https://user-images.githubusercontent.com/72374334/162682352-2495c447-76a6-4062-8280-8bafd8bb96a4.MOV
 
 Now in 240fps slo-mo!
+
+
 https://user-images.githubusercontent.com/72374334/162684065-61fc9712-b6c5-4373-8867-c52222441424.mov
 
 
