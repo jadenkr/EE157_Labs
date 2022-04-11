@@ -9,7 +9,7 @@ The purpose of the lab was to create a goofy motor utilizing 3 materials. A magn
 
 # Procedure
 1. Gather matrials needed:
-   - Copper wire
+   - 16 AWG Copper wire
    - Magnets
    - AA battery
    - Steel punch
@@ -37,6 +37,15 @@ https://user-images.githubusercontent.com/72374334/162684065-61fc9712-b6c5-4373-
 As we watched our goofy little motor spin and spin, we often had trouble balancing the wire. Sometimes it would spin fast enough to knock itself off. Other times, it wouldn't spin at all due to being unbalanced so it wouldn't have stable contact points. The first iteration of the motor was using a spiral bend. That made balancing even harder becasue sometimes the spiral spun then got stuch on the wire. And when it was wide enough to avoid contact, it would fun a way to fall off.
 
 We observed that if you prevented the wire from moving, the wire would heat up in a matter of seconds. As the wire spins in air, it cools itself and becasue of the movement, it doesn't heat up as fast in these instances.
+
+When we bend the wire in a rectangle, the wire is now ortogonal to the magnetic field resulting in a better transfer of force to move the wire with more torque.
+
+### Friction
+Now that we are in an ideal world, we hae friction to deal with. The wire ends and in contact with the steel end of the battery and magents will have some friction. This friction leads to the wire moving slower as we lose the transfer of energy to this small amount of friction. One way to reduce friction is the apply some type of lubricant to the ends and let it spin.
+
+### Drag
+As the wire moves through the air, drag is introduced as it increased in speed. Drag is increased by increasing the surface area of the wire. shape of the bends and size of the wire contribute.
+
 
 # Bonus Experiment
 For fun, I tried connecting two batteries in series to result in a a voltage of 3V. Then I created a similiar wire rectangle design to let it spin on this new and improved goofy motor. It didn't spin as fast as before but it had more torque. I observed this by placing my finger in front of the wire and seeing how much pushing power they both had. This makes sense because more mass means more momentum.
