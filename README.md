@@ -21,8 +21,12 @@ The purpose of the lab was to create a goofy motor utilizing 3 materials. A magn
 
 # Video Time!
 
-
+Recording in 60fps
 https://user-images.githubusercontent.com/72374334/162682352-2495c447-76a6-4062-8280-8bafd8bb96a4.MOV
+
+Now in 240fps slo-mo!
+https://user-images.githubusercontent.com/72374334/162684065-61fc9712-b6c5-4373-8867-c52222441424.mov
+
 
 
 # Conclusions
@@ -30,3 +34,7 @@ As we watched our goofy little motor spin and spin, we often had trouble balanci
 
 We observed that if you prevented the wire from moving, the wire would heat up in a matter of seconds. As the wire spins in air, it cools itself and becasue of the movement, it doesn't heat up as fast in these instances.
 
+# Bonus Experiment
+For fun, I tried connecting two batteries in series to result in a a voltage of 3V. Then I created a similiar wire rectangle design to let it spin on this new and improved goofy motor. It didn't spin as fast as before but it had more torque. I observed this by placing my finger in front of the wire and seeing how much pushing power they both had. This makes sense because more mass means more momentum.
+
+https://user-images.githubusercontent.com/72374334/162683834-57340410-bf86-4efb-8821-e64f3c3f4081.MOV
