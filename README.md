@@ -1,54 +1,84 @@
-# Goofy Motor Report
+# Inductor Design and Characterization Report
 
-Lab 1
+Lab 3
 
-Jaden Redhair 04/10/2022 EE157
+Jaden Redhair 04/27/2022 EE157
 
 # Summary
-The purpose of the lab was to create a goofy motor utilizing 3 materials. A magnet, copper wire, and AA battery. After constructing it, we were able to learn a few things about basic motor fucntions.
+The purpose of the lab was to design and build an inductor with an inductance of +/- 200uH. We ended up with a ~204uH inductor with a 495-5421-ND core, 495-5366-ND bobbin, and 22 AWG wire. We then began to vary the frequency and observed how it affected inductance. Another parameter we tested was to add an auxiliary inductor to decouple the LCR meter measurement from the power supply. Overall, we learned how to design an inductor and analyze it.
 
 # Procedure
-1. Gather matrials needed:
-   - 16 AWG Copper wire
-   - Magnets
-   - AA battery
-   - Steel punch
+1. Gather materials needed:
+   - Chosen AWG Copper wire
+   - Ferrite E core
+   - Corresponding bobbin
    - X-Acto knife
-2. Use the steel punch to create a small indent on the top of the battery so that it has a stable point of contact for the copper wire to pivot around. Be careful not to let the punch "punch." Rather, let it dent the top without using the punch feature or else you risk puncturing the battery.
-3. Unwind and cut a piece of wire about 7-8 inches in length. Carefully scrape the enamel off the tips and in the middle of the wire where it will be resting on the pivot point. We are going with a rectangular shape for this experiment.
-4. bend the wire from the center and have it seperate into two rectagnles that run down the length of the battery.
-5. Attach the magnets and then place the wire on top with the ends touching the magents and watch it spin!
+   - Gapping material (Kapton tape)
+   - Auxiliary Inductor
+2. Calculate the correct values of the inductor given the selected components:
+   - Calculate the energy stored in the inductor. Here we can assume all the energy is stored in the air gap.
+   - Given the energy, we can calculate the volume of the air gap. Which then leads us to be able to calculate the length of the effective air gap. You would do this by dividing the volume by the cross-sectional area of the core.
+   - Given the effective area, we can assume the actual airgap is half of that. We can do this because the two legs of the E core roughly equal the area of the center. So, we would simply divide the gap by 2 to account for the extra gapping. Then find a close enough object or layering's of Kapton to actually put in between the core pieces to measure out the gap.
+   - Now, we can calculate for the number of turns given inductance is equal to the turns squared divided by the effective reluctance.
+   - Finally, we can calculate the thickness wire gauge we can fit in the openings of the core while the bobbin is installed. We simply find the area of the window and divide that by the number of turns to get the gauge thickness we can use. Also, make sure to account for insulation so the effective window area is about 0.6 times the actual.
+3. Now, we can gather the chosen materials and construct our inductor!
+4. Lastly, measure your inductance and see how close you could get to 200uH and how it varies with frequency.
 
-# Video Time!
+# Results
+## Calculated Parameters
+For my inductor, we calculated the following:
+   - Energy stored in the air gap = 0.4 mJ assuming a 410 mT Bsat
+   - Volume = 5.98 mm^3
+   - Length of the gap = 0.093 mm or two pieces of ~50um Kapton tape
+   - Number of turns = 31
+   - Window area for wire gauge = 22.75 mm^2
+   - Wire diameter = 0.0749 cm or ~22 AWG (0.0701 cm)
+   - Wire Resistance = 61.1 mΩ
 
-Recording in 60fps
+![IMG_6349](https://user-images.githubusercontent.com/72374334/165494235-56ff4e1e-5a54-4807-82b8-1c64112449b9.jpg)
 
+## Plots
+### Inductance varied by frequency:
+![Lab 3 200uH Inductance](https://user-images.githubusercontent.com/72374334/165503878-3cf3a215-cf09-4eda-858a-690be7646405.jpeg)
 
-https://user-images.githubusercontent.com/72374334/162682352-2495c447-76a6-4062-8280-8bafd8bb96a4.MOV
+### Inductance with the Auxiliary Inductor at Various Currents at 10kHz
+#### 0 Amp
+![Lab 3 0A](https://user-images.githubusercontent.com/72374334/165504069-75c2b4e5-2c85-4982-a7b1-a09d885ce98b.jpeg)
 
-Now in 240fps slo-mo!
+#### 1 Amp
+![Lab 3 1A](https://user-images.githubusercontent.com/72374334/165504250-fefaae85-7813-4849-b846-068bb4c9b139.jpeg)
 
+#### 2 Amp!
+![Lab 3 2A](https://user-images.githubusercontent.com/72374334/165504264-c2cee8eb-06f8-4c64-9e67-5c8538e23783.jpeg)
 
-https://user-images.githubusercontent.com/72374334/162684065-61fc9712-b6c5-4373-8867-c52222441424.mov
+#### 3 Amp
+![Lab 3 3A](https://user-images.githubusercontent.com/72374334/165504295-d8bd9b64-f4ce-4b2d-a3b2-071ca36f54d1.jpeg)
 
+### Inductance with the Auxiliary Inductor at Various Currents and Frequencies
+#### 0 Amp
+![Lab 3 0A Freq](https://user-images.githubusercontent.com/72374334/165504606-933dafac-2836-4b09-8b7a-02821d8d0ac8.jpeg)
 
+#### 1 Amp
+![Lab 3 1A Freq](https://user-images.githubusercontent.com/72374334/165504617-b1cc330d-f608-47f6-a7fc-ac2ded42e6c4.jpeg)
+
+#### 2 Amp
+![Lab 3 2A Freq](https://user-images.githubusercontent.com/72374334/165504627-335e03fb-a89a-41e2-9836-29714a1698b7.jpeg)
+
+#### 3 Amp
+![Lab 3 3A Freq](https://user-images.githubusercontent.com/72374334/165504632-c7880987-2877-4460-a161-1c7c6ce7c051.jpeg)
 
 # Conclusions
-### Observations
-As we watched our goofy little motor spin and spin, we often had trouble balancing the wire. Sometimes it would spin fast enough to knock itself off. Other times, it wouldn't spin at all due to being unbalanced so it wouldn't have stable contact points. The first iteration of the motor was using a spiral bend. That made balancing even harder becasue sometimes the spiral spun then got stuch on the wire. And when it was wide enough to avoid contact, it would fun a way to fall off.
+### Losses
+We can calculate the winding losses as the resistance of the wire multiplied by the current squared.
+Winding losses = 0.24 W
+Now we can also calculate the core losses which is the K1 constant * frequency * flux density * volume of the core
+Core losses = 3.76mW
+Total losses = 0.24376 W
 
-We observed that if you prevented the wire from moving, the wire would heat up in a matter of seconds. As the wire spins in air, it cools itself and becasue of the movement, it doesn't heat up as fast in these instances.
+We saw that in the lab the inductor heated up as we applied more current. We got higher losses since both the wire and core heated up. The other source of losses we encountered was with the air gap where heat dissipated as well. In comparison, we had more losses. The winding heated up to 90 degrees and this shows that the inductor does in fact lose more heat through winding losses than core losses.
 
-When we bend the wire in a rectangle, the wire is now ortogonal to the magnetic field resulting in a better transfer of force to move the wire with more torque.
+### Did we meet specifications?
+Yes, we met the specifications exactly. We had a 204uH inductance and the reason for the discrepancy lies in the number of turns being rounded up, the length of the airgap increasing to 0.1mm, and just rounding errors.
 
-### Friction
-Now that we are in an ideal world, we hae friction to deal with. The wire ends and in contact with the steel end of the battery and magents will have some friction. This friction leads to the wire moving slower as we lose the transfer of energy to this small amount of friction. One way to reduce friction is the apply some type of lubricant to the ends and let it spin.
-
-### Drag
-As the wire moves through the air, drag is introduced as it increased in speed. Drag is increased by increasing the surface area of the wire. shape of the bends and size of the wire contribute.
-
-
-# Bonus Experiment
-For fun, I tried connecting two batteries in series to result in a a voltage of 3V. Then I created a similiar wire rectangle design to let it spin on this new and improved goofy motor. It didn't spin as fast as before but it had more torque. I observed this by placing my finger in front of the wire and seeing how much pushing power they both had. This makes sense because more mass means more momentum.
-
-https://user-images.githubusercontent.com/72374334/162683834-57340410-bf86-4efb-8821-e64f3c3f4081.MOV
+### Why Kapton Instead of Aluminum?
+We use Kapton because it doesn't affect the airgap all too much if it was just free space. However, aluminum isn't magnetic so it wouldn't work well as an air gapping material. It has a low magnetic permeability so all it will do is heat up a lot in the inductor.
